@@ -1,11 +1,12 @@
 print "You have just been shipwrecked! You wake up washed up on the beach of a deserted island alone. You look around at the lush island in aw. It is beautiful, but what dangers are there?? Survive and get off the Island!!"
+#longer backstory maybe? we just jump straight to the purpose of the game
 shelter = raw_input("First you need to build shelter. It is about noon judging by your shadow and compass. You need to consider your shelter options. Which do you choose? 'treehouse' (in the jungle) or 'tent' (on the beach)?   ")
-if shelter == "treehouse":
+if shelter == "treehouse" or if shelter == "Treehouse":
     sleep_or_food = raw_input("You walk into the jungle and start working on your shelter. You work all day, finding wood, collecting palm fronds, and creating rope out of discarded coconut husks. Your shelter is still not finished after you've expended all your energy. It is getting too dark and you still need to find food. You are hungry, but the dangers of the jungle are unknown...sleep or food?   ")
-    if sleep_or_food == "sleep":
+    if sleep_or_food == "sleep" or if sleep_or_food == "Sleep":
         print "You go to sleep in your unfinished shelter. You just managed to sleep after killing several mosquitos when suddenly, in the middle of the night, a cougar finds its way into your shelter.. By the time your eyes open, the cougar is starting to devour you alive!"
         survive = raw_input("You can still live if you make very very specific moves!! Quickly make a choice: Do you act dead or fight?  ")
-        if survive == "act" or survive == "ACT" or survive == "Act" or survive == "act dead" or survive == "Act dead":
+        if survive == "act" or survive == "ACT" or survive == "Act" or survive == "act dead" or survive == "Act dead" or survive == "Act Dead":
             print "Bad choice! The cougar is already starting to eat you! Does it matter is you're dead or not to the cougar?? You die a slow death while the cougar tears at your skin"
         elif survive == "fight" or survive == "FIGHT" or survive == "Fight":
             method = raw_input("You have to think carefully on this one. This might be crazy, but you might have a knife in your pocket from earlier, but you are not sure. Do you risk it and try to grab the knife that is maybe not there, or do you start punching the cougar in the nose? print 'grab' or 'punch'   ")
@@ -44,7 +45,7 @@ if shelter == "treehouse":
 
 
 import random
-
+#put functions first so that it's easier to call them later!
 matches = {
     ('heads', 'tails'): False,
         ('Heads', 'Tails'): False,
