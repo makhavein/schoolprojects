@@ -1,9 +1,9 @@
 print "You have just been shipwrecked! You wake up washed up on the beach of a deserted island alone. You look around at the lush island in aw. It is beautiful, but what dangers are there?? Survive and get off the Island!!"
 #longer backstory maybe? we just jump straight to the purpose of the game
 shelter = raw_input("First you need to build shelter. It is about noon judging by your shadow and compass. You need to consider your shelter options. Which do you choose? 'treehouse' (in the jungle) or 'tent' (on the beach)?   ")
-if shelter == "treehouse" or if shelter == "Treehouse":
+if shelter == "treehouse" or shelter == "Treehouse":
     sleep_or_food = raw_input("You walk into the jungle and start working on your shelter. You work all day, finding wood, collecting palm fronds, and creating rope out of discarded coconut husks. Your shelter is still not finished after you've expended all your energy. It is getting too dark and you still need to find food. You are hungry, but the dangers of the jungle are unknown...sleep or food?   ")
-    if sleep_or_food == "sleep" or if sleep_or_food == "Sleep":
+    if sleep_or_food == "sleep" or sleep_or_food == "Sleep":
         print "You go to sleep in your unfinished shelter. You just managed to sleep after killing several mosquitos when suddenly, in the middle of the night, a cougar finds its way into your shelter.. By the time your eyes open, the cougar is starting to devour you alive!"
         survive = raw_input("You can still live if you make very very specific moves!! Quickly make a choice: Do you act dead or fight?  ")
         if survive == "act" or survive == "ACT" or survive == "Act" or survive == "act dead" or survive == "Act dead" or survive == "Act Dead":
@@ -110,10 +110,10 @@ def get_random():
 
 if shelter == "tent" or shelter == "Tent":
     print "Good choice! You have enough daylight to find food and water- which do you find first?"
-    choice = raw_input("Food or Water?")
+    choice = raw_input("Food or Water? ")
     if choice == "food" or choice == "Food":
         print "Uh oh! You've stumbled upon a gorilla nest without knowing, but you're able to find a lot of food!"
-        second_choice = raw_input("You begin to run, but which way do you turn first? Left or Right?")
+        second_choice = raw_input("You begin to run, but which way do you turn first? Left or Right? ")
         if second_choice == "left" or second_choice == "Left":
             print "You run into a gorilla and it kills you for taking its food."
         elif second_choice == "right" or second_choice == "Right":
@@ -140,7 +140,7 @@ if shelter == "tent" or shelter == "Tent":
             if result:
                 print "You've won! You avoid the animal den and survive until the next morning, managing to also find water on your way back to your tent!"
                 print "Morning arrives, and it's time to start building your raft!"
-                raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels")
+                raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels \n: ")
                 if raft == 'a':
                     print "CONGRATULATIONS!! You've successfully made it off of the island and you are found by a rescue boat after sailing out in the sea for a day or two!"
                 elif raft == 'b':
@@ -150,7 +150,7 @@ if shelter == "tent" or shelter == "Tent":
             else:
                 print "You've lost and you've been eaten by a family of foxes, sorry."
     elif choice == "water" or choice == "Water":
-        lala = raw_input("Do you choose to a: desalinate ocean water or b: find a stream?")
+        lala = raw_input("Do you choose to a: desalinate ocean water or b: find a stream? ")
         if lala == "a" or lala == "desalinate" or lala == "desalinate ocean water" or lala == "A" or lala == "Desalinate" or lala == "Desalinate ocean water" or lala == "Desalinate Ocean Water" or lala == "desalinate water" or lala == "Desalinate Water" or lala == "Desalinate water":
             print "You now have enough time to find food, how are you going to get it?"
             print "Let's play rock-paper-scissors!"
@@ -170,15 +170,13 @@ if shelter == "tent" or shelter == "Tent":
                 print "I win. You lose!! You die of starvation.. Mwahahahahah"
             if result == True:
                 print "You win, and you've caught a nice fish to eat for dinner! You survive till the next day, and now it's time to build a raft!"
-                raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels")
+                raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels \n: ")
                 if raft == 'a':
                     print "CONGRATULATIONS!! You've successfully made it off of the island and you are found by a rescue boat after sailing out in the sea for a day or two!"
                 elif raft == 'b':
                     print "The tree bark was rotten and did not last long out in the water. You have a slow death by being eaten by a family of piranahs."
                 elif raft == 'c':
                     print "Not the best choice, your raft lasts for a little bit but eventually starts sinking in the middle of the sea; you've drowned."
-            else:
-                print "You were going to pick some berries off of a bush, but decided to climb the trees to get some bananas, but a branch broke underneath you and you fell to your death."
         if lala == "b" or lala == "stream" or lala == "Stream" or lala == "B" or lala == "find a stream" or lala == "Find A Stream" or lala == "Find a Stream" or lala == "Find a stream" or lala == "a stream":
                 print "Finding the stream takes you all day and you don't have time to get back to your tent or find food. What happens next?"
                 bloop = raw_input("Pick a number between 1-5 to find out: ")
@@ -189,8 +187,8 @@ if shelter == "tent" or shelter == "Tent":
                 elif bloop == "3" or bloop == "three" or bloop == "Three":
                     print "You've stayed in one place for too long and get eaten by a random jaguar."
                 elif bloop == "4" or bloop == "Four" or bloop == "four":
-                    print "You're able to find food and return the tent safely! You've survived till the next morning, time to build your raft, what do you build it out of?"
-                    raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels")
+                    print "You're able to find food and return the tent safely! You've survived till the next morning, time to build your raft."
+                    raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels \n: ")
                 elif bloop == "5" or bloop == "Five" or bloop == "five":
                     print "You run home safely! (But you get trampled by an elephant and die.)"
                 else:
