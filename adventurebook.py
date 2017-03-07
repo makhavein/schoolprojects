@@ -177,11 +177,11 @@ if shelter == "tent" or shelter == "Tent":
             if result == True:
                 print "You win, and you've caught a nice fish to eat for dinner! You survive till the next day, and now it's time to build a raft!"
                 raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels")
-                if raft == 'a':
+                if raft == "a":
                     print "CONGRATULATIONS!! You've successfully made it off of the island and you are found by a rescue boat after sailing out in the sea for a day or two!"
-                elif raft == 'b':
+                elif raft == "b":
                     print "The tree bark was rotten and did not last long out in the water. You have a slow death by being eaten by a family of piranahs."
-                elif raft == 'c':
+                elif raft == "c":
                     print "Not the best choice, your raft lasts for a little bit but eventually starts sinking in the middle of the sea; you've drowned."
             else:
                 print "You were going to pick some berries off of a bush, but decided to climb the trees to get some bananas, but a branch broke underneath you and you fell to your death."
