@@ -1,20 +1,37 @@
-print "You have just been shipwrecked! You wake up washed up on the beach of a deserted island alone. You look around at the lush island in aw. It is beautiful, but what dangers are there?? Survive and get off the Island!!"
-shelter = raw_input("First you need to build shelter. It is about noon judging by your shadow and compass. You need to consider your shelter options. Which do you choose? 'treehouse' (in the jungle) or 'tent' (on the beach)?   ")
-if shelter == "treehouse" or shelter == "Treehouse":
-    sleep_or_food = raw_input("You walk into the jungle and start working on your shelter. You work all day, finding wood, collecting palm fronds, and creating rope out of discarded coconut husks. Your shelter is still not finished after you've expended all your energy. It is getting too dark and you still need to find food. You are hungry, but the dangers of the jungle are unknown...sleep or food?   ")
+# This is the git version.  
+
+print "You have just been shipwrecked! You wake up washed up on the beach of a deserted island alone. You look around.. This island is beautiful. Crystal blue waters and a lush jungle, but what dangers are there?? Rumor has it that beautiful islands that are deserted have all sorts of monsters on them!! HA HA HA. Just kidding.. Or am I? Survive and get off the Island!! Good luck sailor."
+shelter = raw_input("Once you get out of shock, you start thinking. First you need to build shelter. It is about noon judging by your shadow and compass. You need to consider your shelter options. Which do you choose? 'treehouse' (in the jungle) or 'tent' (on the beach)?   ")
+if shelter == "treehouse" or shelter == "Treehouse" or shelter == "a treehouse":
+    sleep_or_food = raw_input("You walk into the jungle and start working on your shelter. You work all day, finding wood, collecting palm fronds, and creating rope out of discarded coconut husks. Your shelter is still not finished after you've expended all your energy! You are feeling tired and nauseous.. It is getting too dark and you still need to find food. You are hungry, but the dangers of the jungle are unknown...Which do you choose? sleep or food?   ")
     if sleep_or_food == "sleep" or sleep_or_food == "Sleep" or sleep_or_food == "SLEEP":
-        print "You go to sleep in your unfinished shelter. You just managed to sleep after killing several mosquitos when suddenly, in the middle of the night, a cougar finds its way into your shelter.. By the time your eyes open, the cougar is starting to devour you alive!"
+        print "You find a spot and go to sleep in your unfinished shelter. You finally manage to sleep after killing several mosquitos, when suddenly, in the middle of the night, a cougar finds its way into your shelter.. By the time your eyes open, the cougar is NOSE TO NOSE with YOU! I do not know how you will make it.. These ones are vicious!"
         survive = raw_input("You can still live if you make very very specific moves!! Quickly make a choice: Do you act dead or fight?  ")
-        if survive == "act" or survive == "ACT" or survive == "Act" or survive == "act dead" or survive == "Act dead":
-            print "Bad choice! The cougar is already starting to eat you! Does it matter is you're dead or not to the cougar?? You die a slow death while the cougar tears at your skin"
+        if survive == "act" or survive == "act" or survive == "Act" or survive == "act dead" or survive == "Act dead":
+            print "Oof! Bad choice! The cougar takes one look at you and strikes at you! Does it matter is you're dead or not to the cougar?? You die a slow death while the cougar tears at your skin."
+            placeone = raw_input("Where will you go in your afterlife?  ")
+            if placeone == "Heaven" or placeone == "heaven" or placeone == "HEAVEN":
+                print "Good for you. But are you sure??"
+            elif placeone == "Hell" or placeone == "hell" or placeone == "HELL":
+                print "Hey man, me too. See you there. ;)"
+            else:
+                print "Hmm creative answer... You have fun there!"
         elif survive == "fight" or survive == "FIGHT" or survive == "Fight":
             method = raw_input("You have to think carefully on this one. This might be crazy, but you might have a knife in your pocket from earlier, but you are not sure. Do you risk it and try to grab the knife that is maybe not there, or do you start punching the cougar in the nose? Type 'grab' or 'punch'   ")
             if method == "grab" or method == "Grab":
                 print "good job, trust your instincts."
                 raw_input("Ruh Ro, your knife is not there :) I guess the cougar will just eat you. Say your last words!!  ")
-                print "Very poetic, Have a nice afterlife"
+                print "Very poetic, Have a nice afterlife."
             elif method == "punch" or method == "Punch":
-                print "Cougars are not like sharks! They do not get disoriented if you punch them there!! The cougar gets angrier and devours you faster. Toodles Sailor! :))"
+                print "Cougars are not like sharks! They do not get disoriented if you punch them there!! The cougar gets angrier and devours you faster. Bye Sailor! :))"
+                place = raw_input("Where will you go in your afterlife?  ")
+                if place == "Heaven" or place == "heaven" or place == "HEAVEN":
+                    print "Good for you. But are you sure??"
+                elif place == "Hell" or place == "hell" or place == "HELL":
+                    print "Hey man, me too. See you there. ;)"
+                else:
+                    print "Hmm creative answer... You have fun there!"
+
             else:
                 print "Based on your indecisiveness, I sense your will to live is not strong. A massive tropical storm sweeps you away into Davvy Jones' Locker!!"
         else:
@@ -22,7 +39,7 @@ if shelter == "treehouse" or shelter == "Treehouse":
 
 
     if sleep_or_food == "food" or sleep_or_food == "Food" or sleep_or_food == "FOOD":
-        number = raw_input("You go out to find food and come across some nice bananas hanging low. Lucky you! You prepare to make off with them but a monkey crosses your path! This monkey is particularly smart and persistent.. Be careful! Choose a number between (1-5) to make away with your food  ")
+        number = raw_input("You go out to find food.. OOH! LOOK! Some nice bananas hanging low.. Lucky you! Ruh Ro, you prepare to make off with them but a monkey crosses your path! This monkey is particularly smart and persistent.. Be careful! Choose a number between (1-5) to make away with your food  ")
         num = "3"
         while number != num:
             if number == "5":
@@ -33,7 +50,7 @@ if shelter == "treehouse" or shelter == "Treehouse":
                 number = raw_input("What's your next guess? ")
 
         if number == num:
-            water = raw_input("Good job, you evaded the monkey and get to eat your bananas. Now you have to get water. Do you get it from the pond or the stream?  ")
+            water = raw_input("Good job, you evaded the monkey and get to eat your bananas. You realize that you are deadly dehydrated!! Get water!! Do you get it from the pond or the stream?  ")
             if water == "pond" or water == "the pond" or water == "Pond" or water == "POND" or water == "The pond":
                 print "You contract a digusting bacterial disease... You die the next day."
             elif water == "stream" or water == "Stream" or water == "the stream" or water == "The stream" or water == "STREAM":
@@ -177,11 +194,11 @@ if shelter == "tent" or shelter == "Tent":
             if result == True:
                 print "You win, and you've caught a nice fish to eat for dinner! You survive till the next day, and now it's time to build a raft!"
                 raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels")
-                if raft == "a":
+                if raft == 'a':
                     print "CONGRATULATIONS!! You've successfully made it off of the island and you are found by a rescue boat after sailing out in the sea for a day or two!"
-                elif raft == "b":
+                elif raft == 'b':
                     print "The tree bark was rotten and did not last long out in the water. You have a slow death by being eaten by a family of piranahs."
-                elif raft == "c":
+                elif raft == 'c':
                     print "Not the best choice, your raft lasts for a little bit but eventually starts sinking in the middle of the sea; you've drowned."
             else:
                 print "You were going to pick some berries off of a bush, but decided to climb the trees to get some bananas, but a branch broke underneath you and you fell to your death."
