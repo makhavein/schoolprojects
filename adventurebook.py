@@ -32,11 +32,6 @@ if shelter == "treehouse" or shelter == "Treehouse" or shelter == "a treehouse":
                 else:
                     print "Hmm creative answer... You have fun there!"
 
-            else:
-                print "Based on your indecisiveness, I sense your will to live is not strong. A massive tropical storm sweeps you away into Davvy Jones' Locker!!"
-        else:
-            print "Based on your indecisiveness, I sense your will to live is not strong. A massive tropical storm sweeps you away into Davvy Jones' Locker!!"
-
 
     if sleep_or_food == "food" or sleep_or_food == "Food" or sleep_or_food == "FOOD":
         number = raw_input("You go out to find food.. OOH! LOOK! Some nice bananas hanging low.. Lucky you! Ruh Ro, you prepare to make off with them but a monkey crosses your path! This monkey is particularly smart and persistent.. Be careful! Choose a number between (1-5) to make away with your food  ")
@@ -60,8 +55,6 @@ if shelter == "treehouse" or shelter == "Treehouse" or shelter == "a treehouse":
                     print "You go out onto the water after tirelessly working on your raft and start to drift away... You realize that the tree bark was rotten on the inside and you drown in the middle of the ocean!!"
                 if materials == "bamboo" or materials == "Bamboo" or materials == "BAMBOO":
                     print "CONGRATULATIONS!! You have survived the island and have successfully gotten off of it. A rescue boat finds you floating dreamily, eating bananas and coconuts in the crystal blue waters the next day."
-            else:
-                print "Based on your indecisiveness, I sense your will to live is not strong. A massive tropical storm sweeps you away into Davvy Jones' Locker!!"
 
 
 
@@ -202,7 +195,7 @@ if shelter == "tent" or shelter == "Tent":
                     print "Not the best choice, your raft lasts for a little bit but eventually starts sinking in the middle of the sea; you've drowned."
             else:
                 print "You were going to pick some berries off of a bush, but decided to climb the trees to get some bananas, but a branch broke underneath you and you fell to your death."
-        if lala == "b" or lala == "stream" or lala == "Stream" or lala == "B" or lala == "find a stream" or lala == "Find A Stream" or lala == "Find a Stream" or lala == "Find a stream" or lala == "a stream":
+        elif lala == "b" or lala == "stream" or lala == "Stream" or lala == "B" or lala == "find a stream" or lala == "Find A Stream" or lala == "Find a Stream" or lala == "Find a stream" or lala == "a stream":
                 print "Finding the stream takes you all day and you don't have time to get back to your tent or find food. What happens next?"
                 bloop = raw_input("Pick a number between 1-5 to find out: ")
                 if bloop == "1" or bloop == "one" or bloop == "One":
@@ -224,4 +217,6 @@ if shelter == "tent" or shelter == "Tent":
                         print "Not the best choice, your raft lasts for a little bit but eventually starts sinking in the middle of the sea; you've drowned."
                 else:
                     print "You've died from a jungle virus for not picking a number between 1-5!"
+
+
 
