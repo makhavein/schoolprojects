@@ -215,7 +215,7 @@ if shelter == "tent" or shelter == "Tent":
                     print "You run home safely! (But you get trampled by an elephant and die.)"
                 elif bloop == "4" or bloop == "Four" or bloop == "four":
                     print "You're able to find food and return the tent safely! You've survived till the next morning, time to build your raft, what do you build it out of?"
-                    raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels")
+                    raft = raw_input("What do you build it out of? (choose 'a, b, or c') \n a: Coconuts and Jungle Leaves \n b: Tree Bark and Flowers \n c: Bamboo and Banana Peels  ")
                     if raft == 'a':
                         print "CONGRATULATIONS!! You've successfully made it off of the island and you are found by a rescue boat after sailing out in the sea for a day or two!"
                     elif raft == 'b':
