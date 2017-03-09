@@ -7,7 +7,7 @@ if shelter == "treehouse" or shelter == "Treehouse" or shelter == "a treehouse":
     if sleep_or_food == "sleep" or sleep_or_food == "Sleep" or sleep_or_food == "SLEEP":
         print "You find a spot and go to sleep in your unfinished shelter. You finally manage to sleep after killing several mosquitos, when suddenly, in the middle of the night, a cougar finds its way into your shelter.. By the time your eyes open, the cougar is NOSE TO NOSE with YOU! I do not know how you will make it.. These ones are vicious!"
         survive = raw_input("You can still live if you make very very specific moves!! Quickly make a choice: Do you act dead or fight?  ")
-        if survive == "act" or survive == "act" or survive == "Act" or survive == "act dead" or survive == "Act dead":
+        if survive == "act" or survive == "ACT" or survive == "Act" or survive == "act dead" or survive == "Act dead":
             print "Oof! Bad choice! The cougar takes one look at you and strikes at you! Does it matter is you're dead or not to the cougar?? You die a slow death while the cougar tears at your skin."
             placeone = raw_input("Where will you go in your afterlife?  ")
             if placeone == "Heaven" or placeone == "heaven" or placeone == "HEAVEN":
