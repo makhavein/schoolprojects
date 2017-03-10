@@ -2,11 +2,17 @@
 
 print "You have just been shipwrecked! You wake up washed up on the beach of a deserted island alone. You look around.. This island is beautiful. Crystal blue waters and a lush jungle, but what dangers are there?? Rumor has it that beautiful islands that are deserted have all sorts of monsters on them!! HA HA HA. Just kidding.. Or am I? Survive and get off the Island!! Good luck sailor."
 shelter = raw_input("Once you get out of shock, you start thinking. First you need to build shelter. It is about noon judging by your shadow and compass. You need to consider your shelter options. Which do you choose? 'treehouse' (in the jungle) or 'tent' (on the beach)?   ")
+while shelter != "treehouse" and shelter != "tent":
+    shelter = raw_input("Try again - you can only build a treehouse or a tent!  ")
 if shelter == "treehouse" or shelter == "Treehouse" or shelter == "a treehouse":
     sleep_or_food = raw_input("You walk into the jungle and start working on your shelter. You work all day, finding wood, collecting palm fronds, and creating rope out of discarded coconut husks. Your shelter is still not finished after you've expended all your energy! You are feeling tired and nauseous.. It is getting too dark and you still need to find food. You are hungry, but the dangers of the jungle are unknown...Which do you choose? sleep or food?   ")
+    while sleep_or_food != "sleep" and sleep_or_food != "tent":
+        sleep_or_food = raw_input("Try again - you can only sleep or get food!  ")
     if sleep_or_food == "sleep" or sleep_or_food == "Sleep" or sleep_or_food == "SLEEP":
         print "You find a spot and go to sleep in your unfinished shelter. You finally manage to sleep after killing several mosquitos, when suddenly, in the middle of the night, a cougar finds its way into your shelter.. By the time your eyes open, the cougar is NOSE TO NOSE with YOU! I do not know how you will make it.. These ones are vicious!"
         survive = raw_input("You can still live if you make very very specific moves!! Quickly make a choice: Do you act dead or fight?  ")
+        while survive != "act dead" and survive != "fight":
+            survive = raw_input("Try again - you can only choose those moves!  ")
         if survive == "act" or survive == "act" or survive == "Act" or survive == "act dead" or survive == "Act dead":
             print "Oof! Bad choice! The cougar takes one look at you and strikes at you! Does it matter is you're dead or not to the cougar?? You die a slow death while the cougar tears at your skin."
             placeone = raw_input("Where will you go in your afterlife?  ")
@@ -126,10 +132,14 @@ def get_random():
 
 if shelter == "tent" or shelter == "Tent":
     print "Good choice! You have enough daylight to find food and water- which do you find first?"
-    choice = raw_input("Food or Water?")
+    choice = raw_input("food or water?")
+    while choice != "food" and choice != "water":
+        choice = raw_input("Try again - you can only choose to find food or water!  ")
     if choice == "food" or choice == "Food":
         print "Uh oh! You've stumbled upon a gorilla nest without knowing, but you're able to find a lot of food!"
         second_choice = raw_input("You begin to run, but which way do you turn first? Left or Right?")
+        while second_choice != "left" and second_choice != "right":
+            second_choice = raw_input("Try again - you can only choose right or left!  ")
         if second_choice == "left" or second_choice == "Left":
             print "You run into a gorilla and it kills you for taking its food."
         elif second_choice == "right" or second_choice == "Right":
@@ -167,6 +177,8 @@ if shelter == "tent" or shelter == "Tent":
                 print "You've lost and you've been eaten by a family of foxes, sorry."
     elif choice == "water" or choice == "Water":
         lala = raw_input("Do you choose to a: desalinate ocean water or b: find a stream?")
+        while lala != "a" and lala != "b":
+            lala = raw_input("Try again - you can only choose a or b!  ")
         if lala == "a" or lala == "desalinate" or lala == "desalinate ocean water" or lala == "A" or lala == "Desalinate" or lala == "Desalinate ocean water" or lala == "Desalinate Ocean Water" or lala == "desalinate water" or lala == "Desalinate Water" or lala == "Desalinate water":
             print "You now have enough time to find food, how are you going to get it?"
             print "Let's play rock-paper-scissors!"
